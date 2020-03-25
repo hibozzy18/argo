@@ -35,7 +35,16 @@ State of the cluster (Argo) when the statistics was acquired:
 ### Energy reading per partition 
 The table 1.1 shows the consumed Mega-joules(Mj) per partition and the lowest-Kilo-joules (kj). It can be noted that CMSP partition uses most of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected.
 
-![partition_table](partition_table.png)
+|Partitions|ConsumedMegajoules|Lowestkilojoules|
+|----------|------------------|----------------|
+|cmsp      |3713.95           |21143.11        |
+|esp       |488.6             |1973.29         |
+|esp1      |1005.4            |3388.78         |
+|gpu       |36.63             |417.39          |
+|long      |1903.4            |4763.26         |
+|serial    |42.15             |99.78           |
+|testing   |76.34             |219.33          |
+
 
             Table 1.1 Energy statistics per partition
 
@@ -50,6 +59,8 @@ According to figure 1.0, shows graphical presentation of consumed-joules and low
 
 ### Energy reading per feature 
 The energy consumed categorised by feature:
+
+    Table 1.2 Energy statistics per partition
 
 |Partitions|AvailableFeatures                     |ConsumedMegajoules|Lowestkilojoules|
 |----------|--------------------------------------|------------------|----------------|
