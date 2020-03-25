@@ -51,6 +51,24 @@ According to figure 1.0, shows graphical presentation of consumed-joules and low
 ### Energy reading per feature 
 The energy consumed categorised by feature:
 
+|Partitions|AvailableFeatures                     |ConsumedMegajoules|Lowestkilojoules|
+|----------|--------------------------------------|------------------|----------------|
+|cmsp      |omnipart,128gb,broadwell-ep,e5-2640v4 |1440.93           |8533.63         |
+|cmsp      |omnipart,192,broadwell-ep,e5-2640v4   |2273.02           |12609.48        |
+|esp       |infiniband,32gb,sandybridge-ep,e5-2620|476.25            |1924.83         |
+|esp       |infiniband,64gb,ivybridge-ep,e5-2680v2|12.35             |48.46           |
+|esp1      |infiniband,64gb,ivybridge-ep,e5-2680v2|1005.4            |3388.78         |
+|gpu       |128gb,broadwell-ep,e5-2640v4          |14.46             |327.9           |
+|gpu       |32gb,sandybridge-ep,e5-2665           |22.18             |89.49           |
+|long      |infiniband,32gb,sandybridge-ep,e5-2620|264.43            |1511.23         |
+|long      |infiniband,32gb,sandybridge-ep,e5-2650|200.82            |1214.86         |
+|long      |infiniband,64gb,ivybridge-ep,e5-2680v2|1438.15           |2037.17         |
+|serial    |32gb,sandybridge-ep,e5-2650           |42.15             |99.78           |
+|testing   |32gb,sandybridge-ep,e5-2650           |76.34             |219.33          |
+
+
+![Feature Pie](pie_feature.png)
+
 
 ### Classification per feature on a partition 
 
