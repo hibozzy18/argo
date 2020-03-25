@@ -1,0 +1,4 @@
+AvailableFeatures,ConsumedMegajoules,Lowestkilojoules
+"infiniband,32gb,sandybridge-ep,e5-2620",264.43,1511.23
+"infiniband,32gb,sandybridge-ep,e5-2650",200.82,1214.86
+"infiniband,64gb,ivybridge-ep,e5-2680v2",1438.15,2037.17

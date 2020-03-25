@@ -35,6 +35,8 @@ State of the cluster (Argo) when the statistics was acquired:
 ### Energy reading per partition 
 The table 1.1 shows the consumed Mega-joules(Mj) per partition and the lowest-Kilo-joules (kj). It can be noted that CMSP partition uses most of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected.
 
+            Table 1.2 Energy statistics per partition
+
 |Partitions|ConsumedMegajoules|Lowestkilojoules|
 |----------|------------------|----------------|
 |cmsp      |3713.95           |21143.11        |
@@ -46,12 +48,12 @@ The table 1.1 shows the consumed Mega-joules(Mj) per partition and the lowest-Ki
 |testing   |76.34             |219.33          |
 
 
-            Table 1.1 Energy statistics per partition
-
-
-![pie Partition](pie_partition.png)
+            
 
             Fig 1.0 Energy consumption per partition
+![pie Partition](pie_partition.png)
+
+            
 
 
 According to figure 1.0, shows graphical presentation of consumed-joules and lowest-kilojoules of data that is in table 1.1.
@@ -60,7 +62,7 @@ According to figure 1.0, shows graphical presentation of consumed-joules and low
 ### Energy reading per feature 
 The energy consumed categorised by feature:
 
-    Table 1.2 Energy statistics per partition
+            Table 1.3 Energy statistics per partition
 
 |Partitions|AvailableFeatures                     |ConsumedMegajoules|Lowestkilojoules|
 |----------|--------------------------------------|------------------|----------------|
@@ -78,16 +80,23 @@ The energy consumed categorised by feature:
 |testing   |32gb,sandybridge-ep,e5-2650           |76.34             |219.33          |
 
 
-![Feature Pie](pie_feature.png)
+![Feature Pie](consumedjoules_pie_feature.png)
 
 
-### Classification per feature on a partition 
+### Analysis per partition 
+
+### Feature distribution on the cluster
+
+### Distribution for nodes per partition
 
 #### CSMP Partition 
 #### Long Partition 
 #### GPU Partition 
 #### CSMP Partition 
 
+
+
+##### All other partitoions serial, test, long 
 
 ## Power 
 
