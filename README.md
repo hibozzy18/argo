@@ -5,6 +5,12 @@ We activated energy recording plugin in Slurm which is called the RAPL. RAPL mea
 
 Command used to get the `scontrol show node  -o `
 
+
+The logical steps for preparation of the report on files:
+
+* For Energy Analysis [Energy analysis ](energy_processing.ipynb)
+* For Power Analysis [Power analysis ](power_processing.ipynb)
+
 ## Energy 
 
 ### Node states
@@ -24,14 +30,34 @@ State of the cluster (Argo) when the statistics was acquired:
 | Serial02         | DOWN+POWER      |    ResumeTimeout reached |
 | Westmere01       | IDLE+DRAIN+POWER   |    Low RealMemory |
 
+            Table 1.1  States of unusual nodes
 
 ### Energy reading per partition 
 The table 1.1 shows the consumed Mega-joules(Mj) per partition and the lowest-Kilo-joules (kj). It can be noted that CMSP partition uses most of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected.
 
 ![partition_table](partition_table.png)
 
+            Table 1.1 Energy statistics per partition
 
-## Classification per feature on a partition 
+
+![pie Partition](pie_partition.png)
+
+            Fig 1.0 Energy consumption per partition
+
+
+According to figure 1.0, shows graphical presentation of consumed-joules and lowest-kilojoules of data that is in table 1.1.
+
+
+### Energy reading per feature 
+The energy consumed categorised by feature:
+
+
+### Classification per feature on a partition 
+
+#### CSMP Partition 
+#### Long Partition 
+#### GPU Partition 
+#### CSMP Partition 
 
 
 ## Power 
