@@ -7,9 +7,9 @@ Command used to get the `scontrol show node  -o `
 
 ### Node states
 The results from the command shows that we have 151 nodes and not all of them were recording enegery. Below is a brief summary of the nodes: 
-
 * We have 2 nodes(nehalem[01-02]) that were not collecting data.
-* All other nodes recorded normal readings except the following nodes had additional `Reason Attribute` from the rest of the nodes in the cluster at the time of data extraction from Slurm.
+* We have additional 2 nodes westmere01 and serial02 that also were not  making any recording.In addition to this  I also noticed that NodeHostName was a number I am not sure if this is the issue and Node `westmere01` had `23938` and `serial02` had `31955`
+* Apart from the 4 nodes  mentioned above all other nodes recorded normal readings. Nodes in table 1.0  had  an additional `Reason Attribute` from the rest of the nodes in the cluster at the time of data extraction from Slurm but I captured thier energy.
 
 | Node Name        | State         | Reasons  |
 | -------------    |:-------------:| --------:|
@@ -33,7 +33,7 @@ The logical steps for preparation of the report on files:
 
 
 ### Energy reading per partition 
-The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) per partition. It can be noted that CMSP partition uses almost half of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected.
+The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) per partition. It can be noted that CMSP partition uses almost half of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected. 
 
 |Partitions|ConsumedMegajoules|Lowestkilojoules|
 |----------|------------------|----------------|
@@ -46,6 +46,8 @@ The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) p
 |testing   |76.34             |219.33          |
 
 Table: 1.1 Energy per partition
+
+The total energy that was consumed by the nodes is 7266.47
             
 ![pie Partition](pie_partition.png) 
 Fig 1.0 Energy Consumption per partition
@@ -145,7 +147,7 @@ Table: 1.4 Energy  per feature
 
 ##### All other partitoions serial, test, esp have one family  they are  using. 
 
-## Power 
+ 
 
 
 
