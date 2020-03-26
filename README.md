@@ -104,19 +104,19 @@ Table: 1.4 Energy  per feature
 
 ![CSMP Pie](consumedjoules_cmsp_partition.png)
 
-|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|
-|-----------------|------------------|----------------|
-|omnipart,128gb,broadwell-ep,e5-2640v4|1440.93           |8533.63         |
-|omnipart,192,broadwell-ep,e5-2640v4|2273.02           |12609.48        |
+|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes |
+|-----------------|------------------|----------------|-----------|
+|omnipart,128gb,broadwell-ep,e5-2640v4|1440.93           |8533.63         |  16 |
+|omnipart,192,broadwell-ep,e5-2640v4|2273.02           |12609.48        |  24 |
 
 
 #### Long Partition
 
-|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|
-|-----------------|------------------|----------------|
-|infiniband,32gb,sandybridge-ep,e5-2620|264.43            |1511.23         |
-|infiniband,32gb,sandybridge-ep,e5-2650|200.82            |1214.86         |
-|infiniband,64gb,ivybridge-ep,e5-2680v2|1438.15           |2037.17         |
+|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes  |
+|-----------------|------------------|----------------|----------- |
+|infiniband,32gb,sandybridge-ep,e5-2620|264.43            |1511.23         |  12  |
+|infiniband,32gb,sandybridge-ep,e5-2650|200.82            |1214.86         |  10  |
+|infiniband,64gb,ivybridge-ep,e5-2680v2|1438.15           |2037.17         | 16   |
 
 
 ![Long Pie](consumedjoules_long_partition.png)
@@ -124,27 +124,26 @@ Table: 1.4 Energy  per feature
 
 #### GPU Partition 
 
-|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|
-|-----------------|------------------|----------------|
-|128gb,broadwell-ep,e5-2640v4|14.46             |327.9           |
-|32gb,sandybridge-ep,e5-2665|22.18             |89.49            |
+|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes  |
+|-----------------|------------------|----------------|----------- |
+|128gb,broadwell-ep,e5-2640v4|14.46             |327.9           |  1  |
+|32gb,sandybridge-ep,e5-2665|22.18             |89.49            |  1  |
 
 ![GPU Pie](consumedjoules_gpu_partition.png)
 
-#### CSMP Partition 
+#### ESP Partition 
+
+|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes  |
+|-----------------|------------------|----------------|----------- |
+|infiniband,32gb,sandybridge-ep,e5-2620|476.25            |1924.83         |   35   |
+|infiniband,64gb,ivybridge-ep,e5-2680v2|12.35             |48.46           |    1  |
 
 
-|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|
-|-----------------|------------------|----------------|
-|omnipart,128gb,broadwell-ep,e5-2640v4|1440.93           |8533.63         |
-|omnipart,192,broadwell-ep,e5-2640v4|2273.02           |12609.48        |
-
-
-![CSMP Pie](consumedjoules_cmsp_partition.png)
+![CSMP Pie](consumedjoules_esp_partition.png)
 
 
 
-##### All other partitoions serial, test, long 
+##### All other partitoions serial, test, esp have one family  they are  using. 
 
 ## Power 
 
