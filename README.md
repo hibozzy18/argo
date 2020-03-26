@@ -8,7 +8,7 @@ Command used to get the `scontrol show node  -o `
 
 The logical steps for preparation of the report on files:
 
-* For Energy Analysis [Energy analysis ](energy_processing.ipynb)
+* For Energy Analysis [Energy analysis ](energy_processing_con.ipynb)
 * For Power Analysis [Power analysis ](power_processing.ipynb)
 
 ## Energy 
@@ -104,7 +104,7 @@ The energy consumed categorised by feature:
 
 #### CSMP Partition 
 
-![CSMP Pie](consumedjoules_csmp_partition.png)
+![CSMP Pie](consumedjoules_cmsp_partition.png)
 
 |AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|
 |-----------------|------------------|----------------|
