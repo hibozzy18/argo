@@ -1,7 +1,7 @@
 # Argo energy analysis – from 06/03/2020 to 13/03/2020
 
 ## Introduction
-Argo is a heterogeneous cluster with nodes from different architectural family. Our aim is to measure and  understand energy utilisation of the cluster in order to implement energy saving measures. We activated energy recording plugin RAPL in Slurm, which is used to measure enegergy for CPU and DRAM only. The period of measurement was approximately a week starting from 06/03/2020 to 13/03/2020.After configuring the monitoring tool, we restarted nodes and this gave us an additional variable SlurmdStartTime to use to measure the time when the enegergy  started being recorded.
+Argo is a heterogeneous cluster made up of nodes from different architectural family. Our aim is to measure and  understand energy utilisation in the cluster in order to implement energy saving measures. We activated energy recording plugin RAPL in Slurm. The period of measurement was approximately a week starting from 06/03/2020 to 13/03/2020.After configuring the monitoring tool, we restarted nodes and this gave us an additional variable `SlurmdStartTime` to use to measure the time when the enegergy  started being recorded.
 
 Command used to get the `scontrol show node  -o `
 
@@ -47,7 +47,7 @@ The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) p
 
 Table: 1.1 Energy per partition
 
-The total energy that was consumed by the whole cluster for the period is 7266.47 Megajoules.
+The total energy that was consumed by the whole cluster for the period is **7266.47 Megajoules** .
             
 ![pie Partition](img/pie_partition.png) 
 Fig 1.0 Energy Consumption per partition
@@ -98,7 +98,7 @@ Table: 1.4 Energy  per feature
 
 
 
-#### CSMP Partition 
+#### CMSP Partition 
 
 
 |AvailableFeatures|ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
