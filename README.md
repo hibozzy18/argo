@@ -180,7 +180,7 @@ All other partitoions serial, test, esp have one type of architecture that they 
 
 ## Analysis
 
-* We can forcus our imlementation on this:
+* We can imlementat it using the following:
      * We can use architecture family to see which one uses most energy 
      * We can use partitions to see which one uses most of the energy
 
