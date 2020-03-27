@@ -26,7 +26,7 @@ Table: 1.0  Unusual state of nodes
 
 
 ## Energy 
-The logical steps for preparation of the report on files:
+The logical steps for preparing the report are on the following files:
 
 * For Energy Analysis [Energy analysis ](energy_processing_con.ipynb)
 * For Power Analysis [Power analysis ](power_processing.ipynb)
@@ -47,7 +47,7 @@ The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) p
 
 Table: 1.1 Energy per partition
 
-The total energy that was consumed by the whole cluster for the period is **7266.47 Megajoules** .
+The total energy that was consumed by the whole cluster (147 nodes out of 151) for the period is **7266.47 Megajoules** .
             
 ![pie Partition](img/pie_partition.png) 
 Fig 1.0 Energy Consumption per partition
@@ -154,15 +154,12 @@ Table: 1.8 Energy for ESP partition
 ## Rest of Partitions
 All other partitoions serial, test, esp have one type of architecture that they are using, so they is no need to show how energy was being distributed.
 
- 
 
 ## Analysis
 
-* We can use architecture family to see which one uses most of the energy 
-
-* We can use partitions to see which one uses most of the energy.
-
-* 
++ We can forcus our imlementation on this:
+        * We can use architecture family to see which one uses most energy 
+        * We can use partitions to see which one uses most of the energy
 
 
 
