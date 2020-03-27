@@ -1,15 +1,15 @@
 # Argo energy analysis – from 06/03/2020 to 13/03/2020
 
 ## Introduction
-Argo is a heterogeneous cluster made up of nodes from different architectural family. Our aim is to measure and  understand energy utilisation in the cluster in order to implement energy saving measures. We activated energy recording plugin RAPL in Slurm. The period of measurement was approximately a week starting from 06/03/2020 to 13/03/2020.After configuring the monitoring tool, we restarted nodes and this gave us an additional variable `SlurmdStartTime` to use to measure the time when the enegergy  started being recorded.
+Argo is a heterogeneous cluster made up of nodes from different architectural family. Our aim is to measure and  understand energy utilisation in the cluster in order to implement energy saving measures. We activated energy recording plugin RAPL in Slurm. The period of measurement was approximately a week starting from 06/03/2020 to 13/03/2020.After configuring the monitoring tool, we restarted nodes and this gave us an additional variable `SlurmdStartTime` to measure the time when the energy  started being recorded.
 
 Command used to get the `scontrol show node  -o `
 
 ### Node states
 The results from the command shows that we have 151 nodes and not all of them were recording enegery. Below is a brief summary of the nodes: 
 * We have 2 nodes(nehalem[01-02]) that were not collecting data.
-* We have additional 2 nodes westmere01 and serial02 that also were not  making any recording.In addition to this  I also noticed that NodeHostName was a number I am not sure if this is the issue and Node `westmere01` had `23938` and `serial02` had `31955`
-* Apart from the 4 nodes  mentioned above all other nodes recorded normal readings. Nodes in table 1.0  had  an additional `Reason Attribute` from the rest of the nodes in the cluster at the time of data extraction from Slurm but I captured thier energy.
+* We  also have additional 2 nodes westmere01 and serial02 that also were not  making any recording. In addition to this I also noticed that NodeHostName was a number and different from the registered name I am not sure if this is the issue and Node `westmere01` had `23938` and `serial02` had `31955`
+* Apart from the 4 nodes  mentioned above all other nodes recorded normal readings. Nodes in table 1.0  had  an additional `Reason Attribute` from the rest of the nodes in the cluster at the time of data extraction from Slurm but I captured their energy statistics.
 
 | Node Name        | State         | Reasons  |
 | -------------    |:-------------:| --------:|
@@ -52,10 +52,11 @@ The total energy that was consumed by the whole cluster for the period is **7266
 ![pie Partition](img/pie_partition.png) 
 Fig 1.0 Energy Consumption per partition
 
-According to figure 1.0, shows graphical presentation of consumed-joules and lowest-kilojoules of data that is in table 1.1.
+Figure 1.0 shows graphical presentation of consumed-joules and lowest-kilojoules of data that is in table 1.1.
 
 
-### Energy reading per feature 
+### Energy reading per partition grouped by feature
+
 The energy consumed categorised by feature:
 
 |Partitions|AvailableFeatures                     |ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
@@ -75,10 +76,10 @@ The energy consumed categorised by feature:
 
 Table: 1.3 Energy per partition grouped by features 
 
-Table 1.3 shows the the energy of partitions and further classfied by different types of architecture that makes up the  parttions.
+Table 1.3 shows the the energy of partitions and further classfied by different types of architecture that makes up the  partitions.
 
 
-### Feature distribution on the cluster
+###  Energy reading per partition feature 
 
 
 |AvailableFeatures|ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
@@ -92,7 +93,10 @@ Table 1.3 shows the the energy of partitions and further classfied by different 
 |omnipart,128gb,broadwell-ep,e5-2640v4|1440.93           |8533.63         |16  |
 |omnipart,192,broadwell-ep,e5-2640v4|2273.02           |12609.48        |24  |
 
-Table: 1.4 Energy  per feature
+Table: 1.4 Energy per feature
+
+Table 1.4 shows the the energy classfied by different types of architecture that makes up the cluster.
+
 
 ![Feature Pie](img/consumedjoules_pie_feature.png)
 
@@ -106,6 +110,8 @@ Table: 1.4 Energy  per feature
 |omnipart,128gb,broadwell-ep,e5-2640v4|1440.93           |8533.63         |  16 |
 |omnipart,192,broadwell-ep,e5-2640v4|2273.02           |12609.48        |  24 |
 
+Table: 1.5 Energy for CMSP partition 
+
 ![CSMP Pie](img/consumedjoules_cmsp_partition.png)
 
 #### Long Partition
@@ -116,6 +122,7 @@ Table: 1.4 Energy  per feature
 |infiniband,32gb,sandybridge-ep,e5-2650|200.82            |1214.86         |  10  |
 |infiniband,64gb,ivybridge-ep,e5-2680v2|1438.15           |2037.17         | 16   |
 
+Table: 1.6 Energy for long partition
 
 ![Long Pie](img/consumedjoules_long_partition.png)
 
@@ -127,6 +134,8 @@ Table: 1.4 Energy  per feature
 |128gb,broadwell-ep,e5-2640v4|14.46             |327.9           |  1  |
 |32gb,sandybridge-ep,e5-2665|22.18             |89.49            |  1  |
 
+Table: 1.7 Energy for GPU partition
+
 ![GPU Pie](img/consumedjoules_gpu_partition.png)
 
 #### ESP Partition 
@@ -136,15 +145,24 @@ Table: 1.4 Energy  per feature
 |infiniband,32gb,sandybridge-ep,e5-2620|476.25            |1924.83         |   35   |
 |infiniband,64gb,ivybridge-ep,e5-2680v2|12.35             |48.46           |    1  |
 
+Table: 1.8 Energy for ESP partition
 
-![CSMP Pie](img/consumedjoules_esp_partition.png)
+![ESP Pie](img/consumedjoules_esp_partition.png)
 
 
 
-##### Rest of Partitions
+## Rest of Partitions
 All other partitoions serial, test, esp have one type of architecture that they are using, so they is no need to show how energy was being distributed.
 
  
+
+## Analysis
+
+* We can use architecture family to see which one uses most of the energy 
+
+* We can use partitions to see which one uses most of the energy.
+
+* 
 
 
 
