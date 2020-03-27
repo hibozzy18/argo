@@ -35,7 +35,7 @@ The logical steps for preparation of the report on files:
 ### Energy reading per partition 
 The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) per partition. It can be noted that CMSP partition uses almost half of the energy followed by the long partition and GPU partition having the lowest energy. In addition to that GPU nodes have high Lowestkilojoules considering that they are just 2 nodes which is expected. 
 
-|Partitions|ConsumedMegajoules|Lowestkilojoules|
+|Partitions|ConsumedMegajoules (Mj)|Lowestkilojoules (kj)|
 |----------|------------------|----------------|
 |cmsp      |3713.95           |21143.11        |
 |esp       |488.6             |1973.29         |
@@ -47,9 +47,9 @@ The table 1.1 shows the consumed Megajoules(Mj) and the lowest Kilojoules (kj) p
 
 Table: 1.1 Energy per partition
 
-The total energy that was consumed by the nodes is 7266.47
+The total energy that was consumed by the nodes is 7266.47 Megajoules.
             
-![pie Partition](pie_partition.png) 
+![pie Partition](img/pie_partition.png) 
 Fig 1.0 Energy Consumption per partition
 
 
@@ -59,7 +59,7 @@ According to figure 1.0, shows graphical presentation of consumed-joules and low
 ### Energy reading per feature 
 The energy consumed categorised by feature:
 
-|Partitions|AvailableFeatures                     |ConsumedMegajoules|Lowestkilojoules|Num Nodes |
+|Partitions|AvailableFeatures                     |ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
 |----------|--------------------------------------|------------------|----------------|----------|
 |cmsp      |omnipart,128gb,broadwell-ep,e5-2640v4 |1440.93           |8533.63         |  24      |
 |cmsp      |omnipart,192,broadwell-ep,e5-2640v4   |2273.02           |12609.48        |  16      |
@@ -85,7 +85,7 @@ Table 1.3 shows the the energy of partitions and further classfied by different 
 ### Feature distribution on the cluster
 
 
-|AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes |
+|AvailableFeatures|ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
 |-----------------|------------------|----------------|---------- |
 |128gb,broadwell-ep,e5-2640v4|14.46             |327.9           | 1  |
 |32gb,sandybridge-ep,e5-2650|118.49            |319.11          | 3 |
@@ -98,13 +98,13 @@ Table 1.3 shows the the energy of partitions and further classfied by different 
 
 Table: 1.4 Energy  per feature
 
-![Feature Pie](consumedjoules_pie_feature.png)
+![Feature Pie](img/consumedjoules_pie_feature.png)
 
 
 
 #### CSMP Partition 
 
-![CSMP Pie](consumedjoules_cmsp_partition.png)
+![CSMP Pie](img/consumedjoules_cmsp_partition.png)
 
 |AvailableFeatures|ConsumedMegajoules|Lowestkilojoules|Num Nodes |
 |-----------------|------------------|----------------|-----------|
@@ -121,7 +121,7 @@ Table: 1.4 Energy  per feature
 |infiniband,64gb,ivybridge-ep,e5-2680v2|1438.15           |2037.17         | 16   |
 
 
-![Long Pie](consumedjoules_long_partition.png)
+![Long Pie](img/consumedjoules_long_partition.png)
 
 
 #### GPU Partition 
@@ -131,7 +131,7 @@ Table: 1.4 Energy  per feature
 |128gb,broadwell-ep,e5-2640v4|14.46             |327.9           |  1  |
 |32gb,sandybridge-ep,e5-2665|22.18             |89.49            |  1  |
 
-![GPU Pie](consumedjoules_gpu_partition.png)
+![GPU Pie](img/consumedjoules_gpu_partition.png)
 
 #### ESP Partition 
 
@@ -141,7 +141,7 @@ Table: 1.4 Energy  per feature
 |infiniband,64gb,ivybridge-ep,e5-2680v2|12.35             |48.46           |    1  |
 
 
-![CSMP Pie](consumedjoules_esp_partition.png)
+![CSMP Pie](img/consumedjoules_esp_partition.png)
 
 
 
