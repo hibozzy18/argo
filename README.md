@@ -50,12 +50,12 @@ Table: 1.1 Energy per partition
 The total energy that was consumed by the whole cluster (147 nodes out of 151) for the period is **7266.47 Megajoules** .
             
 ![pie Partition](img/pie_partition.png) 
-Fig 1.0 Energy Consumption per partition
+Fig: 1.0 Energy Consumption per partition
 
-Figure 1.0 shows graphical presentation of consumed-joules and lowest-kilojoules of data that is in table 1.1.
+Figure 1.0 shows graphical presentation of consumed Megajoules and lowest kilojoules of data that is in table 1.1.
 
 
-### Energy reading per partition grouped by feature
+#### Energy reading per partition grouped by feature
 
 The energy consumed categorised by feature:
 
@@ -79,7 +79,7 @@ Table: 1.3 Energy per partition grouped by features
 Table 1.3 shows the the energy of partitions and further classfied by different types of architecture that makes up the  partitions.
 
 
-###  Energy reading per partition feature 
+###  Energy reading per  feature 
 
 
 |AvailableFeatures|ConsumedMegajoules (Mj)|Lowestkilojoules (kj) |Num Nodes |
@@ -100,6 +100,11 @@ Table 1.4 shows the the energy classfied by different types of architecture that
 
 ![Feature Pie](img/consumedjoules_pie_feature.png)
 
+Fig: 1.1 Energy Consumption per feature
+
+Figure 1.1  shows graphical presentation of consumed Megajoules per feature, data that is in table 1.4.
+
+###  Energy reading for  partitions  
 
 
 #### CMSP Partition 
@@ -114,6 +119,11 @@ Table: 1.5 Energy for CMSP partition
 
 ![CSMP Pie](img/consumedjoules_cmsp_partition.png)
 
+Fig: 1.2 Energy for CMSP partition 
+
+Figure 1.2 shows graphical presentation of consumed Megajoules and lowest kilojoules of data that is in table 1.5.
+
+
 #### Long Partition
 
 |AvailableFeatures|ConsumedMegajoules (Mj) |Lowestkilojoules (kj) |Num Nodes  |
@@ -127,6 +137,11 @@ Table: 1.6 Energy for long partition
 ![Long Pie](img/consumedjoules_long_partition.png)
 
 
+Fig: 1.3 Energy for long partition
+
+Figure 1.3 shows graphical presentation of consumed Megajoules and lowest kilojoules of data that is in table 1.6.
+
+
 #### GPU Partition 
 
 |AvailableFeatures|ConsumedMegajoules (Mj) |Lowestkilojoules (kj) |Num Nodes  |
@@ -137,6 +152,11 @@ Table: 1.6 Energy for long partition
 Table: 1.7 Energy for GPU partition
 
 ![GPU Pie](img/consumedjoules_gpu_partition.png)
+
+
+Fig: 1.4 Energy for GPU partition
+
+Figure 1.4 shows graphical presentation of consumed Megajoules and lowest kilojoules of data that is in table 1.7.
 
 #### ESP Partition 
 
@@ -149,6 +169,9 @@ Table: 1.8 Energy for ESP partition
 
 ![ESP Pie](img/consumedjoules_esp_partition.png)
 
+Fig: 1.5 Energy for ESP partition
+
+Figure 1.5 shows graphical presentation of consumed Megajoules and lowest kilojoules of data that is in table 1.8.
 
 
 ## Rest of Partitions
